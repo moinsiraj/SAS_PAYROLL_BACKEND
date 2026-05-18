@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/BLL/bin
+/BLL/obj
+/BOL/bin
+/BOL/obj
+/DAL/bin
+/DAL/obj
+/Payroll_API/bin
+/Payroll_API/obj
+/Payroll_API/Properties/PublishProfiles
+/Payroll_API/Payroll_API.csproj.user

@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Tax_Report\DataSet.Designer.cs" />
+    <Content Remove="wwwroot\Tax_Report\DataSet.xsc" />
+    <Content Remove="wwwroot\Tax_Report\DataSet.xss" />
+    <Content Remove="wwwroot\Tax_Report\TaxDataSet.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="wwwroot\Tax_Report\TaxDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TaxDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreApiResponse" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.21" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\AttenCsvFileUpload\40\" />
+    <Folder Include="wwwroot\EmployeeImage\40\" />
+    <Folder Include="wwwroot\Employee_QRCode\" />
+    <Folder Include="wwwroot\EmployeeSignature\" />
+    <Folder Include="wwwroot\BankLogo\" />
+    <Folder Include="wwwroot\NomineeImage\" />
+    <Folder Include="wwwroot\TextFileUpload\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Tax_Report\TaxDataSet.xsc" />
+    <None Include="wwwroot\Tax_Report\TaxDataSet.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>TaxDataSet.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="wwwroot\Tax_Report\TaxDataSet.xss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Report\SalarySheet_Summary - Copy.rdlc">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\Tax_Report\Dg_EmpTaxInfoReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Tax_Report\Dg_EmpTaxChallanInfoReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\Tax_Report\TaxDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TaxDataSet.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="employee">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>3e5fa2bc-2d96-4829-ae69-7d0e30a30bb0</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="IDCard">
+      <Query>
+        <DataSourceName>employee</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="compid">
+          <DataField>compid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="com_nameBangla">
+          <DataField>com_nameBangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="emp_serial">
+          <DataField>emp_serial</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="emp_no">
+          <DataField>emp_no</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="emp_proxid">
+          <DataField>emp_proxid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="emp_ref">
+          <DataField>emp_ref</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="oi_joineddate">
+          <DataField>oi_joineddate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="pi_nameinbangla">
+          <DataField>pi_nameinbangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dec_name_bangla">
+          <DataField>dec_name_bangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="oi_ProcessName_Bangla">
+          <DataField>oi_ProcessName_Bangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dptnamebangla">
+          <DataField>dptnamebangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_empcontactno">
+          <DataField>pi_empcontactno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_emergencyno">
+          <DataField>pi_emergencyno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_bloodgroup">
+          <DataField>pi_bloodgroup</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_nic">
+          <DataField>pi_nic</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_birth_certificate_no">
+          <DataField>pi_birth_certificate_no</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_present_village_Bgl">
+          <DataField>pi_present_village_Bgl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pi_present_PO_Bgl">
+          <DataField>pi_present_PO_Bgl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="th_nameBangla">
+          <DataField>th_nameBangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="di_nameBangla">
+          <DataField>di_nameBangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="oi_line_name">
+          <DataField>oi_line_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Line_Name_Bangla">
+          <DataField>Line_Name_Bangla</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BarcodeGen">
+          <DataField>BarcodeGen</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="IsShowEmpSign">
+          <DataField>IsShowEmpSign</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="IsShowAuthSign">
+          <DataField>IsShowAuthSign</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>employee</rd:DataSetName>
+        <rd:SchemaPath>D:\DG_Projects\AspNetCore\Payroll_Update\Dg_payroll\Payroll_API\wwwroot\Report\employee.xsd</rd:SchemaPath>
+        <rd:TableName>Dg_Pay_Rep_EmpIdCardBangla</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>3.94332in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>3.26611in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle1">
+                          <ReportItems>
+                            <Rectangle Name="Rectangle2">
+                              <ReportItems>
+                                <Image Name="Image2">
+                                  <Source>Database</Source>
+                                  <Value>=Fields!BarcodeGen.Value</Value>
+                                  <MIMEType>image/png</MIMEType>
+                                  <Sizing>Fit</Sizing>
+                                  <Top>2.36644in</Top>
+                                  <Left>0.06751in</Left>
+                                  <Height>0.29202in</Height>
+                                  <Width>1.8225in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Textbox Name="Textbox76">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>GB cwiPqcÎ nvwi‡q †M‡j ZvrÿwbK fv‡e e¨e¯’vcbv 
+KZ…©cÿ‡K Rvbv‡Z n‡e|</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.00766in</Top>
+                                  <Left>0.05551in</Left>
+                                  <Height>0.30903in</Height>
+                                  <Width>1.8345in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox56">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>AvB.wW KvW© bs</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.07651in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.57764in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox57">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.07651in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox72">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!emp_no.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.09485in</Top>
+                                  <Left>0.7003in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21471in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox58">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>†gqv`</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.24554in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox59">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.24554in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox73">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value />
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.27054in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox60">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>†Uwj‡dvb b¤^i</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.417in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>8</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox61">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.417in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>9</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox74">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_empcontactno.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.442in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>10</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox62">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>i‡³i MÖæc</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.58603in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>11</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox71">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.58603in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>12</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox75">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_bloodgroup.Value</Value>
+                                          <Style>
+                                            <FontFamily>arial</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.61103in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>13</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox79">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>M«vg</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.753in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>14</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox81">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.753in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>15</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox83">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Riæwi b¤^i</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.42203in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>16</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox84">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.42203in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>17</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox85">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_emergencyno.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.44703in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>18</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox86">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>RvZxq cwiPqcÎ</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.58099in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>19</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox87">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.58099in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>20</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox88">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_nic.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.60599in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>21</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox89">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Rb¥ wbeÜb bs</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.75002in</Top>
+                                  <Left>0.05322in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>22</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox90">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.75002in</Top>
+                                  <Left>0.60947in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>23</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox91">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_birth_certificate_no.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.77502in</Top>
+                                  <Left>0.7003in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21471in</Width>
+                                  <ZIndex>24</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox92">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>‡cvó</Value>
+                                          <Style>
+                                            <FontFamily>sutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.92314in</Top>
+                                  <Left>0.0503in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>25</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox93">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.92314in</Top>
+                                  <Left>0.60655in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>26</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox94">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>_vbv</Value>
+                                          <Style>
+                                            <FontFamily>sutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.08939in</Top>
+                                  <Left>0.0503in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>27</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox95">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.08939in</Top>
+                                  <Left>0.60655in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>28</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox5">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_present_village_Bgl.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox5</rd:DefaultName>
+                                  <Top>0.778in</Top>
+                                  <Left>0.7003in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21471in</Width>
+                                  <ZIndex>29</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox6">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_present_PO_Bgl.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox5</rd:DefaultName>
+                                  <Top>0.94814in</Top>
+                                  <Left>0.70169in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.21332in</Width>
+                                  <ZIndex>30</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox7">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!th_nameBangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox5</rd:DefaultName>
+                                  <Top>1.10578in</Top>
+                                  <Left>0.70586in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.19665in</Width>
+                                  <ZIndex>31</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox96">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>‡Rjv</Value>
+                                          <Style>
+                                            <FontFamily>sutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.25495in</Top>
+                                  <Left>0.05292in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.58333in</Width>
+                                  <ZIndex>32</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox97">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.25495in</Top>
+                                  <Left>0.60917in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>33</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox8">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!di_nameBangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox5</rd:DefaultName>
+                                  <Top>1.28384in</Top>
+                                  <Left>0.70848in</Left>
+                                  <Height>0.15625in</Height>
+                                  <Width>1.19665in</Width>
+                                  <ZIndex>34</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>0.04167in</Top>
+                              <Left>0.0125in</Left>
+                              <Height>2.79213in</Height>
+                              <Width>1.94555in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle3">
+                              <ReportItems>
+                                <Image Name="Image6">
+                                  <Source>External</Source>
+                                  <Value>=Parameters!AuthSign.Value &amp;Fields!compid.Value &amp;".jpg"</Value>
+                                  <Sizing>Fit</Sizing>
+                                  <Top>2.69183in</Top>
+                                  <Left>0.99758in</Left>
+                                  <Height>0.24092in</Height>
+                                  <Width>0.78768in</Width>
+                                  <Visibility>
+                                    <Hidden>=IIF(Fields!IsShowAuthSign.Value=True,False, True)</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Image Name="Image1">
+                                  <Source>External</Source>
+                                  <Value>=Parameters!EmpImagePath.Value &amp;Fields!compid.Value &amp;"/" &amp; Fields!emp_no.Value &amp;".JPG"</Value>
+                                  <Sizing>Fit</Sizing>
+                                  <Top>0.44461in</Top>
+                                  <Left>0.59278in</Left>
+                                  <Height>0.61335in</Height>
+                                  <Width>0.68056in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Color>MidnightBlue</Color>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Image Name="Image5">
+                                  <Source>Embedded</Source>
+                                  <Value>Dg_Logo</Value>
+                                  <Sizing>FitProportional</Sizing>
+                                  <Top>0.03594in</Top>
+                                  <Left>0.0841in</Left>
+                                  <Height>0.25034in</Height>
+                                  <Width>0.26389in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Textbox Name="CompanyName1">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>cwiPq cÎ</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>12pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>CompanyName1</rd:DefaultName>
+                                  <Top>0.03594in</Top>
+                                  <Left>0.0841in</Left>
+                                  <Height>0.25034in</Height>
+                                  <Width>1.66867in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox37">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>AvB.wW bs</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.05102in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox32">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>bvg</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.219in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox34">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>c`ex</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.40442in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox43">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Kv‡Ri aib</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.57456in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox36">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>wefvM/kvLv</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.74608in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>8</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox38">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>jvBb bs</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.91623in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>9</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox45">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>†hvM`vb</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.07803in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>10</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox78">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>wU‡KU</Value>
+                                          <Style>
+                                            <FontStyle>Normal</FontStyle>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <TextDecoration>None</TextDecoration>
+                                            <Color>#000000</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.26484in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>11</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox40">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.07803in</Top>
+                                  <Left>0.48527in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>12</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox41">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.05102in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>13</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox44">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.26484in</Top>
+                                  <Left>0.48964in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>14</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox46">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.91623in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>15</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox48">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.74608in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>16</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox49">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.57456in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>17</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox50">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.40442in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>18</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox52">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.219in</Top>
+                                  <Left>0.4875in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>19</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox47">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Bmy¨i ZvwiL</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.43775in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.49998in</Width>
+                                  <ZIndex>20</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox53">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>:</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.43775in</Top>
+                                  <Left>0.48964in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>0.09083in</Width>
+                                  <ZIndex>21</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox54">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>kÖwg‡Ki ¯^vÿi</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.94664in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.17471in</Height>
+                                  <Width>0.89201in</Width>
+                                  <ZIndex>22</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox55">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>KZ©…c‡¶i ¯^v¶i</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.94664in</Top>
+                                  <Left>0.99758in</Left>
+                                  <Height>0.17471in</Height>
+                                  <Width>0.78768in</Width>
+                                  <ZIndex>23</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Color>Black</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </TopBorder>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox77">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!com_nameBangla.Value)</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>9pt</FontSize>
+                                            <Format>dd/MM/yyyy</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>0.25989in</Top>
+                                  <Left>0.0841in</Left>
+                                  <Height>0.19444in</Height>
+                                  <Width>1.66867in</Width>
+                                  <ZIndex>24</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox65">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!emp_no.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.07602in</Top>
+                                  <Left>0.58584in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.19942in</Width>
+                                  <ZIndex>25</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox70">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!oi_joineddate.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <Format>dd/MM/yyyy</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.46275in</Top>
+                                  <Left>0.59436in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.1909in</Width>
+                                  <ZIndex>26</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox63">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!pi_nameinbangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.244in</Top>
+                                  <Left>0.59436in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.1909in</Width>
+                                  <ZIndex>27</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox64">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!dec_name_bangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.42942in</Top>
+                                  <Left>0.5886in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.19666in</Width>
+                                  <ZIndex>28</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox68">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!oi_ProcessName_Bangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.59956in</Top>
+                                  <Left>0.58047in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.20479in</Width>
+                                  <ZIndex>29</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox66">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!dptnamebangla.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.77108in</Top>
+                                  <Left>0.59436in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.1909in</Width>
+                                  <ZIndex>30</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox67">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!Line_Name_Bangla.Value)</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyOMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>1.94123in</Top>
+                                  <Left>0.5886in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.19666in</Width>
+                                  <ZIndex>31</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox69">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!oi_joineddate.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <Format>dd/MM/yyyy</Format>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.10303in</Top>
+                                  <Left>0.59436in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.1909in</Width>
+                                  <ZIndex>32</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox80">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!emp_no.Value</Value>
+                                          <Style>
+                                            <FontFamily>SutonnyMJ</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Left</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox12</rd:DefaultName>
+                                  <Top>2.28984in</Top>
+                                  <Left>0.59436in</Left>
+                                  <Height>0.21527in</Height>
+                                  <Width>1.1909in</Width>
+                                  <ZIndex>33</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Image Name="Image4">
+                                  <Source>External</Source>
+                                  <Value>=Parameters!EmpSign.Value &amp;Fields!compid.Value &amp;"/" &amp; Fields!emp_no.Value &amp;".png"</Value>
+                                  <Sizing>Fit</Sizing>
+                                  <Top>2.69651in</Top>
+                                  <Left>0.0341in</Left>
+                                  <Height>0.25013in</Height>
+                                  <Width>0.89201in</Width>
+                                  <ZIndex>34</ZIndex>
+                                  <Visibility>
+                                    <Hidden>=IIF(Fields!IsShowEmpSign.Value=True,False, True)</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>0.04128in</Top>
+                              <Left>2.01222in</Left>
+                              <Height>3.17622in</Height>
+                              <Width>1.85035in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="emp_no">
+                    <GroupExpressions>
+                      <GroupExpression>=(RowNumber(Nothing)) Mod 2</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!emp_no.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="details">
+                    <GroupExpressions>
+                      <GroupExpression>=Ceiling(RowNumber(Nothing)/2)</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!emp_no.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>IDCard</DataSetName>
+            <Top>0.0625in</Top>
+            <Height>3.26611in</Height>
+            <Width>3.94332in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>3.3425in</Height>
+        <Style />
+      </Body>
+      <Width>3.94332in</Width>
+      <Page>
+        <PageHeight>11.69in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <LeftMargin>0.2in</LeftMargin>
+        <TopMargin>0.25in</TopMargin>
+        <BottomMargin>0.25in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="EmpImagePath">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EmpSign">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AuthSign">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>4</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EmpImagePath</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EmpSign</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>AuthSign</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Shared Function Code128A(ByVal stringText as String, ByVal fontVer as Integer, Optional isHumanReadable As Boolean = True) As Byte()
+	If isHumanReadable Then
+		Return GenerateImage("BCW_Code128A_" &amp; fontVer, BCW_Code128A(stringText))
+	Else
+		Return GenerateImage("BCW_Code128_" &amp; fontVer, BCW_Code128A(stringText))
+	End If
+End Function
+
+Public Shared Function Code128B(ByVal stringText as String, ByVal fontVer as Integer, Optional isHumanReadable As Boolean = True) As Byte()
+	If isHumanReadable Then
+		Return GenerateImage("BCW_Code128B_" &amp; fontVer, BCW_Code128B(stringText))
+	Else
+		Return GenerateImage("BCW_Code128_" &amp; fontVer, BCW_Code128B(stringText))
+	End If
+End Function
+
+
+Public Shared Function Code128C(ByVal stringText as String, ByVal fontVer as Integer, Optional isHumanReadable As Boolean = True) As Byte()
+	If isHumanReadable Then
+		Return GenerateImage("BCW_Code128C_" &amp; fontVer, BCW_Code128C(stringText))
+	Else
+		Return GenerateImage("BCW_Code128_" &amp; fontVer, BCW_Code128C(stringText))
+	End If
+End Function
+
+Public Shared Function GenerateImage(ByVal fontName As String,  ByVal stringText As String) As Byte()
+        Dim oGraphics As System.Drawing.Graphics
+        Dim barcodeSize As System.Drawing.SizeF
+        Dim ms As System.IO.MemoryStream
+ 
+        Dim fontSize as Integer = 220
+
+        Using font As New System.Drawing.Font(New System.Drawing.FontFamily(fontName), fontSize)
+            Using tmpBitmap As New System.Drawing.Bitmap(1, 1, System.Drawing.Imaging.PixelFormat.Format32bppArgb)
+                oGraphics = System.Drawing.Graphics.FromImage(tmpBitmap)
+                oGraphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel
+                barcodeSize = oGraphics.MeasureString(stringText, font)
+                oGraphics.Dispose()
+            End Using
+ 
+            Using newBitmap As New System.Drawing.Bitmap(barcodeSize.Width, barcodeSize.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb)
+                oGraphics = System.Drawing.Graphics.FromImage(newBitmap)
+                oGraphics.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixel
+ 
+                Using oSolidBrushWhite As New System.Drawing.SolidBrush(System.Drawing.Color.White)
+                    Using oSolidBrushBlack As New System.Drawing.SolidBrush(System.Drawing.Color.Black)
+                        oGraphics.FillRectangle(oSolidBrushWhite, New System.Drawing.Rectangle(0, 0, barcodeSize.Width, barcodeSize.Height))
+                        oGraphics.DrawString(stringText, font, oSolidBrushBlack, 0, 0)
+                    End Using
+ 
+                End Using
+ 
+                ms = New System.IO.MemoryStream()
+                newBitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png)
+            End Using
+        End Using
+ 
+        Return ms.ToArray()
+    End Function
+
+
+    Public Shared Function BCW_Code128A(ByVal input As String) As String
+        Dim chkDigitTotal As Integer = 103
+        Dim inputLength As Integer = input.Length
+
+        If inputLength = 0 Then Return ""
+
+        Dim currentPos As Integer = 1
+
+        While currentPos &lt;= inputLength
+            Dim bcVal As Integer
+
+            Dim asciiVal As Integer = Asc(input(currentPos - 1))
+
+            If asciiVal &gt;= 32 And asciiVal &lt;= 95 Then
+                bcVal = asciiVal - 32
+            ElseIf asciiVal &gt;= 0 And asciiVal &lt;= 31 Then
+                bcVal = asciiVal + 64
+            Else
+                Return ""
+            End If
+
+            chkDigitTotal += bcVal * currentPos
+            currentPos = currentPos + 1
+        End While
+        chkDigitTotal = chkDigitTotal Mod 103
+
+        Dim output As String = ""
+
+        output = output + Chr(203)
+
+        For i As Integer = 0 To inputLength - 1
+
+            If input(i) = Chr(32) Then
+                output += Chr(232)
+            Else
+                output += input(i)
+            End If
+        Next
+
+        output += C128ToBars(chkDigitTotal)
+        output += Chr(206)
+
+        Return output
+    End Function
+    Public Shared Function BCW_Code128B(ByVal input As String) As String
+        Dim chkDigitTotal As Integer = 104
+        Dim inputLength As Integer = input.Length
+
+        If inputLength = 0 Then Return ""
+
+        Dim currentPos As Integer = 1
+
+        While currentPos &lt;= inputLength
+            Dim bcVal As Integer
+
+            Dim asciiVal As Integer = Asc(input(currentPos - 1))
+
+            If asciiVal &gt;= 32 And asciiVal &lt;= 126 Then
+                bcVal = asciiVal - 32
+            Else
+                Return ""
+            End If
+
+            chkDigitTotal += bcVal * currentPos
+            currentPos = currentPos + 1
+        End While
+
+        chkDigitTotal = chkDigitTotal Mod 103
+
+        Dim output As String = ""
+
+        output = output + Chr(204)
+
+        For i As Integer = 0 To inputLength - 1
+
+            If input(i) = Chr(32) Then
+                output += Chr(232)
+            Else
+                output += input(i)
+            End If
+        Next
+
+        output += C128ToBars(chkDigitTotal)
+        output += Chr(206)
+
+        Return output
+    End Function
+
+
+    Public Shared Function BCW_Code128C(ByVal input As String, Optional ByVal insertLeadingZero As Boolean = False) As String
+        Dim chkDigitTotal As Integer = 105
+        Dim inputLength As Integer = input.Length
+
+        If inputLength = 0 Then Return ""
+
+        Dim currentPos As Integer = 1
+
+        'Only numbers are valid
+        For l As Integer = 0 To inputLength - 1
+            If input(l) &gt; "9" Or input(l) &lt; "0" Then
+                Return ""
+            End If
+        Next
+
+        If inputLength Mod 2 &lt;&gt; 0 Then
+            If insertLeadingZero Then
+                input = "0" + input
+                inputLength = inputLength + 1
+            Else
+                Return ""
+            End If
+        End If
+
+
+        Dim output As String = ""
+
+        For i As Integer = 0 To inputLength - 1 Step 2
+            Dim bcVal As Integer = Convert.ToInt32(input.Substring(i, 2))
+            chkDigitTotal += currentPos * bcVal
+            currentPos = currentPos + 1
+
+            If bcVal = 0 Then
+                output += Chr(232)
+            ElseIf bcVal &gt;= 1 And bcVal &lt;= 94 Then
+                output += Chr(bcVal + 32)
+            ElseIf bcVal &gt;= 95 And bcVal &lt;= 99 Then
+                output += Chr(bcVal + 132)
+            End If
+        Next
+
+        chkDigitTotal = chkDigitTotal Mod 103
+
+        output = Chr(205) + output
+
+        output += C128ToBars(chkDigitTotal)
+        output += Chr(206)
+
+        Return output
+    End Function
+
+
+
+    Private Shared Function C128ToBars(ByVal chkDigit As Integer) As String
+
+        Dim c As String = "212222222122222221121223121322" _
+                        + "131222122213122312132212221213221312" _
+                        + "231212112232122132122231113222123122" _
+                        + "123221223211221132221231213212223112" _
+                        + "312131311222321122321221312212322112" _
+                        + "322211212123212321232121111323131123" _
+                        + "131321112313132113132311211313231113" _
+                        + "231311112133112331132131113123113321" _
+                        + "133121313121211331231131213113213311" _
+                        + "213131311123311321331121312113312311" _
+                        + "332111314111221411431111111224111422" _
+                        + "121124121421141122141221112214112412" _
+                        + "122114122411142112142211241211221114" _
+                        + "413111241112134111111242121142121241" _
+                        + "114212124112124211411212421112421211" _
+                        + "212141214121412121111143111341131141" _
+                        + "114113114311411113411311113141114131" _
+                        + "3111414111312114122112142112322331112"
+
+        Dim startPos As Integer = chkDigit * 6
+        Dim output As String = ""
+
+        For i As Integer = 0 To 5
+            Dim addPos As Integer = 0
+            If i Mod 2 = 0 Then
+                addPos = 180 + Asc(c.Substring(startPos + i)) - 48 - 1
+            Else
+                addPos = 184 + Asc(c.Substring(startPos + i)) - 48 - 1
+            End If
+            output += Chr(addPos)
+        Next
+
+        Return output
+    End Function</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Dg_Logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <CodeModules>
+    <CodeModule>System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+    <CodeModule>System.Drawing.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+    <CodeModule>System.Drawing.Primitives, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+  </CodeModules>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>4519ee69-8af2-4c11-975d-22070af2f957</rd:ReportID>
+</Report>
