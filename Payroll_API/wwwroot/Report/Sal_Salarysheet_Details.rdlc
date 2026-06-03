@@ -2025,7 +2025,6 @@
                                             </Style>
                                           </Rectangle>
                                           <ColSpan>43</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -10229,7 +10228,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ss_absence.Value + Fields!ss_lunch_bill.Value + Fields!ss_advance.Value + Fields!ss_tax.Value + Fields!ss_stamp.Value + Fields!ss_otherdeduction.Value</Value>
+                                                    <Value>=Fields!ss_absence.Value + Fields!ss_lunch_bill.Value + Fields!ss_advance.Value + Fields!ss_tax.Value + Fields!ss_stamp.Value + Fields!ss_otherdeduction.Value + Fields!ss_pf.Value</Value>
                                                     <Style>
                                                       <FontFamily>Times New Roman</FontFamily>
                                                       <FontSize>6pt</FontSize>

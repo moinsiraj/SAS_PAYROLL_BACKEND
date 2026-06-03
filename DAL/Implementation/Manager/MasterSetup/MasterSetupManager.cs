@@ -135,11 +135,11 @@ namespace DAL.Implementation.Manager.MasterSetup
         {
             List<TreeListReport> listObjTree = new List<TreeListReport>();
             List<Dg_ReportPermission> listObj = new List<Dg_ReportPermission>();
-            var rptListType = await _dgCommon.get_InformationDataTableAsync("select distinct rep_cat from dg_pay_totalReportList", _payCon);
+            var rptListType = await _dgCommon.get_InformationDataTableAsync("select distinct rep_cat from dg_pay_totalReportList where rep_IsShowReport=1", _payCon);
             for (int i = 0; i < rptListType.Rows.Count; i++)
             {
                 string reportCat = rptListType.Rows[i]["rep_cat"].ToString();
-                var childData = await _dgCommon.get_InformationDataTableAsync("select * from dg_pay_totalReportList where rep_cat='" + reportCat + "'", _payCon);
+                var childData = await _dgCommon.get_InformationDataTableAsync("select * from dg_pay_totalReportList where rep_cat='" + reportCat + "' and rep_IsShowReport=1", _payCon);
                 foreach (DataRow row in childData.Rows)
                 {
                     listObj.Add(new Dg_ReportPermission

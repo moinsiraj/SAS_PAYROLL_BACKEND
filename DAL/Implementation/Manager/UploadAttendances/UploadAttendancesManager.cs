@@ -1905,7 +1905,7 @@ namespace DAL.Implementation.Manager.UploadAttendances
                     textFileLine = replaceLine.Substring(0, 22);
                 }
             }
-            else if (txt_id == 16)
+            else if (txt_id == 16 || txt_id == 40)
             {
                 if (replaceLine.Length < 22)
                 {
