@@ -3960,7 +3960,7 @@ or Fields!compid.Value = 38 Or Fields!compid.Value = 40 Or Fields!compid.Value =
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>DG/Payroll</Value>
+                      <Value>Cloudora/Payroll</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                       </Style>

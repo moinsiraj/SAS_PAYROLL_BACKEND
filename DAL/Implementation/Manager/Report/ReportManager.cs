@@ -30,7 +30,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_EmployeeDetails_inactive "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\dg_Inactiveemp_details.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_Inactiveemp_details.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("Title",string.Concat("Employee InActive List - ",ReportTitle.DepartmentName,ReportTitle.SectionName,ReportTitle.BuildingName,ReportTitle.LineName)),
@@ -45,7 +45,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_EmployeeDetails "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\dg_emp_details.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_emp_details.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -127,7 +127,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_JoinDateWiseEmployeeDetails "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_JoinDateWiseEmp_details.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_JoinDateWiseEmp_details.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("Title",string.Concat("Join Date wise Employee Active List - ",ReportTitle.DepartmentName,ReportTitle.SectionName,ReportTitle.BuildingName,ReportTitle.LineName)),
@@ -163,7 +163,7 @@ namespace DAL.Implementation.Manager.Report
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_EmpIdCardBangla "+ companyID + ",'"+ userName + "'", _connection);
             this.AddDataColumnWithBarcode(data, 6);
             string dataset = "IDCard";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_IDCardBangla.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_IDCardBangla.rdlc";
             string imgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeImage\\").AbsoluteUri;
             string imgPathEmpSign = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeSignature\\").AbsoluteUri;
             string imgPathAuthSign = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\").AbsoluteUri;
@@ -226,7 +226,7 @@ namespace DAL.Implementation.Manager.Report
         {
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_AppointmentLetter "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "AppLttrWorker";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_AppointmentLetter.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_AppointmentLetter.rdlc";
             string groupLogo = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\GroupLogo.png").AbsoluteUri;
             string authSign = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
@@ -258,7 +258,7 @@ namespace DAL.Implementation.Manager.Report
         {
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_AppointmentLetter_StaffBN "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "AppLttrWorker";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_AppointmentLetter_StaffBN.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_AppointmentLetter_StaffBN.rdlc";
             string groupLogo = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\GroupLogo.png").AbsoluteUri;
             string authSign = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
@@ -371,7 +371,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_EmployeeProxIDChkList "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "ProxIDList";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_ProximityCardChecklist.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_ProximityCardChecklist.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -471,7 +471,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("dg_rpt_tiffinbill_status "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_EmpTiffinBillStatus.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_EmpTiffinBillStatus.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -486,7 +486,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("dg_rpt_nightbill_status "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_EmpNightBillStatus.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_EmpNightBillStatus.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -501,7 +501,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_Shift_change_history "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\dg_emp_shiftchange_history.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_emp_shiftchange_history.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -921,7 +921,7 @@ namespace DAL.Implementation.Manager.Report
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_Lev_Balances "+ companyID + ",'"+ userName + "'", _connection);
             var year = Convert.ToDateTime(ReportTitle.StartDate).Year;
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_LeaveBalances.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_LeaveBalances.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -951,7 +951,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist_leave", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_Lev_Balances "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "LeaveBal";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_IndividualLeaveStatement.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_IndividualLeaveStatement.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -988,7 +988,7 @@ namespace DAL.Implementation.Manager.Report
         {
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_Leave_from "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "leaveForm";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_LeaveForm.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_LeaveForm.rdlc";
             string groupLogoImgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\GroupLogo.png").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
@@ -1200,7 +1200,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist_atttendance", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Rep_Att_SecSummary "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "AttSecSum";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_Att_SectionWiseSummary.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_Att_SectionWiseSummary.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
@@ -1268,7 +1268,7 @@ namespace DAL.Implementation.Manager.Report
             var ReportTitle = this.ReportTitle("dg_print_employeelist_atttendance", companyID, userName, _connection);
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_Att_AttMonthly "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "AttMonthly";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_Att_MonthlyAttendance.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_Att_MonthlyAttendance.rdlc";
             int num = 1;
             do
             {

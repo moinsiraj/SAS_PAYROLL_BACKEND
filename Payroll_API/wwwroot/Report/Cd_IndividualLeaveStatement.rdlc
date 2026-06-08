@@ -1522,7 +1522,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.28058in</Height>
+          <Height>0.32919in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1546,8 +1546,8 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.06944in</Top>
-              <Height>0.16667in</Height>
-              <Width>7.48077in</Width>
+              <Height>0.25975in</Height>
+              <Width>7.75809in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1566,7 +1566,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>DG/Payroll</Value>
+                      <Value>Cloudora/Payroll</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                       </Style>
@@ -1578,7 +1578,7 @@
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.05696in</Top>
               <Left>0.04234in</Left>
-              <Height>0.16667in</Height>
+              <Height>0.27223in</Height>
               <Width>1.23625in</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -1613,7 +1613,7 @@
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.05696in</Top>
               <Left>5.96739in</Left>
-              <Height>0.16667in</Height>
+              <Height>0.27223in</Height>
               <Width>1.7907in</Width>
               <ZIndex>2</ZIndex>
               <Style>
