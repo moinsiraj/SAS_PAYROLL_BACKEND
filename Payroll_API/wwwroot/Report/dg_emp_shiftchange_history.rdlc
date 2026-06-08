@@ -953,7 +953,7 @@
             <Top>0.02778in</Top>
             <Left>0.04851in</Left>
             <Height>0.60833in</Height>
-            <Width>7.79498in</Width>
+            <Width>7.79499in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -964,7 +964,7 @@
         <Height>0.63611in</Height>
         <Style />
       </Body>
-      <Width>7.84349in</Width>
+      <Width>7.8435in</Width>
       <Page>
         <PageHeader>
           <Height>0.92861in</Height>
@@ -1125,7 +1125,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>DG/Payroll</Value>
+                      <Value>Cloudora/Payroll</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                       </Style>
