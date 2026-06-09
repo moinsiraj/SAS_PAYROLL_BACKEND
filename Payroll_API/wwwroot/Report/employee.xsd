@@ -4680,133 +4680,133 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="dg_rpt_emp_envelope" msprop:Generator_RowEvHandlerName="dg_rpt_emp_envelopeRowChangeEventHandler" msprop:Generator_RowDeletedName="dg_rpt_emp_envelopeRowDeleted" msprop:Generator_RowDeletingName="dg_rpt_emp_envelopeRowDeleting" msprop:Generator_RowEvArgName="dg_rpt_emp_envelopeRowChangeEvent" msprop:Generator_TablePropName="dg_rpt_emp_envelope" msprop:Generator_RowChangedName="dg_rpt_emp_envelopeRowChanged" msprop:Generator_RowChangingName="dg_rpt_emp_envelopeRowChanging" msprop:Generator_TableClassName="dg_rpt_emp_envelopeDataTable" msprop:Generator_RowClassName="dg_rpt_emp_envelopeRow" msprop:Generator_TableVarName="tabledg_rpt_emp_envelope" msprop:Generator_UserTableName="dg_rpt_emp_envelope">
+        <xs:element name="dg_rpt_emp_envelope" msprop:Generator_RowClassName="dg_rpt_emp_envelopeRow" msprop:Generator_RowEvHandlerName="dg_rpt_emp_envelopeRowChangeEventHandler" msprop:Generator_RowDeletedName="dg_rpt_emp_envelopeRowDeleted" msprop:Generator_RowDeletingName="dg_rpt_emp_envelopeRowDeleting" msprop:Generator_RowEvArgName="dg_rpt_emp_envelopeRowChangeEvent" msprop:Generator_TablePropName="dg_rpt_emp_envelope" msprop:Generator_RowChangedName="dg_rpt_emp_envelopeRowChanged" msprop:Generator_UserTableName="dg_rpt_emp_envelope" msprop:Generator_RowChangingName="dg_rpt_emp_envelopeRowChanging" msprop:Generator_TableClassName="dg_rpt_emp_envelopeDataTable" msprop:Generator_TableVarName="tabledg_rpt_emp_envelope">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="compid" msprop:Generator_ColumnPropNameInRow="compid" msprop:Generator_ColumnPropNameInTable="compidColumn" msprop:Generator_ColumnVarNameInTable="columncompid" msprop:Generator_UserColumnName="compid" type="xs:int" minOccurs="0" />
-              <xs:element name="com_name" msprop:Generator_ColumnPropNameInRow="com_name" msprop:Generator_ColumnPropNameInTable="com_nameColumn" msprop:Generator_ColumnVarNameInTable="columncom_name" msprop:Generator_UserColumnName="com_name" minOccurs="0">
+              <xs:element name="compid" msprop:Generator_UserColumnName="compid" msprop:Generator_ColumnPropNameInTable="compidColumn" msprop:Generator_ColumnPropNameInRow="compid" msprop:Generator_ColumnVarNameInTable="columncompid" type="xs:int" minOccurs="0" />
+              <xs:element name="com_name" msprop:Generator_UserColumnName="com_name" msprop:Generator_ColumnPropNameInTable="com_nameColumn" msprop:Generator_ColumnPropNameInRow="com_name" msprop:Generator_ColumnVarNameInTable="columncom_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="com_nameBangla" msprop:Generator_ColumnPropNameInRow="com_nameBangla" msprop:Generator_ColumnPropNameInTable="com_nameBanglaColumn" msprop:Generator_ColumnVarNameInTable="columncom_nameBangla" msprop:Generator_UserColumnName="com_nameBangla" minOccurs="0">
+              <xs:element name="com_nameBangla" msprop:Generator_UserColumnName="com_nameBangla" msprop:Generator_ColumnPropNameInTable="com_nameBanglaColumn" msprop:Generator_ColumnPropNameInRow="com_nameBangla" msprop:Generator_ColumnVarNameInTable="columncom_nameBangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="com_ad1" msprop:Generator_ColumnPropNameInRow="com_ad1" msprop:Generator_ColumnPropNameInTable="com_ad1Column" msprop:Generator_ColumnVarNameInTable="columncom_ad1" msprop:Generator_UserColumnName="com_ad1" minOccurs="0">
+              <xs:element name="com_ad1" msprop:Generator_UserColumnName="com_ad1" msprop:Generator_ColumnPropNameInTable="com_ad1Column" msprop:Generator_ColumnPropNameInRow="com_ad1" msprop:Generator_ColumnVarNameInTable="columncom_ad1" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="com_ad1Bangla" msprop:Generator_ColumnPropNameInRow="com_ad1Bangla" msprop:Generator_ColumnPropNameInTable="com_ad1BanglaColumn" msprop:Generator_ColumnVarNameInTable="columncom_ad1Bangla" msprop:Generator_UserColumnName="com_ad1Bangla" minOccurs="0">
+              <xs:element name="com_ad1Bangla" msprop:Generator_UserColumnName="com_ad1Bangla" msprop:Generator_ColumnPropNameInTable="com_ad1BanglaColumn" msprop:Generator_ColumnPropNameInRow="com_ad1Bangla" msprop:Generator_ColumnVarNameInTable="columncom_ad1Bangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="com_tel" msprop:Generator_ColumnPropNameInRow="com_tel" msprop:Generator_ColumnPropNameInTable="com_telColumn" msprop:Generator_ColumnVarNameInTable="columncom_tel" msprop:Generator_UserColumnName="com_tel" minOccurs="0">
+              <xs:element name="com_tel" msprop:Generator_UserColumnName="com_tel" msprop:Generator_ColumnPropNameInTable="com_telColumn" msprop:Generator_ColumnPropNameInRow="com_tel" msprop:Generator_ColumnVarNameInTable="columncom_tel" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="com_fax" msprop:Generator_ColumnPropNameInRow="com_fax" msprop:Generator_ColumnPropNameInTable="com_faxColumn" msprop:Generator_ColumnVarNameInTable="columncom_fax" msprop:Generator_UserColumnName="com_fax" minOccurs="0">
+              <xs:element name="com_fax" msprop:Generator_UserColumnName="com_fax" msprop:Generator_ColumnPropNameInTable="com_faxColumn" msprop:Generator_ColumnPropNameInRow="com_fax" msprop:Generator_ColumnVarNameInTable="columncom_fax" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="emp_serial" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnPropNameInRow="emp_serial" msprop:Generator_ColumnPropNameInTable="emp_serialColumn" msprop:Generator_ColumnVarNameInTable="columnemp_serial" msprop:Generator_UserColumnName="emp_serial" type="xs:int" />
-              <xs:element name="emp_no" msprop:Generator_ColumnPropNameInRow="emp_no" msprop:Generator_ColumnPropNameInTable="emp_noColumn" msprop:Generator_ColumnVarNameInTable="columnemp_no" msprop:Generator_UserColumnName="emp_no" type="xs:int" minOccurs="0" />
-              <xs:element name="oi_joineddate" msprop:Generator_ColumnPropNameInRow="oi_joineddate" msprop:Generator_ColumnPropNameInTable="oi_joineddateColumn" msprop:Generator_ColumnVarNameInTable="columnoi_joineddate" msprop:Generator_UserColumnName="oi_joineddate" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="pi_fullname" msprop:Generator_ColumnPropNameInRow="pi_fullname" msprop:Generator_ColumnPropNameInTable="pi_fullnameColumn" msprop:Generator_ColumnVarNameInTable="columnpi_fullname" msprop:Generator_UserColumnName="pi_fullname" minOccurs="0">
+              <xs:element name="emp_serial" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="emp_serial" msprop:Generator_ColumnPropNameInTable="emp_serialColumn" msprop:Generator_ColumnPropNameInRow="emp_serial" msprop:Generator_ColumnVarNameInTable="columnemp_serial" type="xs:int" />
+              <xs:element name="emp_no" msprop:Generator_UserColumnName="emp_no" msprop:Generator_ColumnPropNameInTable="emp_noColumn" msprop:Generator_ColumnPropNameInRow="emp_no" msprop:Generator_ColumnVarNameInTable="columnemp_no" type="xs:int" minOccurs="0" />
+              <xs:element name="oi_joineddate" msprop:Generator_UserColumnName="oi_joineddate" msprop:Generator_ColumnPropNameInTable="oi_joineddateColumn" msprop:Generator_ColumnPropNameInRow="oi_joineddate" msprop:Generator_ColumnVarNameInTable="columnoi_joineddate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pi_fullname" msprop:Generator_UserColumnName="pi_fullname" msprop:Generator_ColumnPropNameInTable="pi_fullnameColumn" msprop:Generator_ColumnPropNameInRow="pi_fullname" msprop:Generator_ColumnVarNameInTable="columnpi_fullname" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_nameinbangla" msprop:Generator_ColumnPropNameInRow="pi_nameinbangla" msprop:Generator_ColumnPropNameInTable="pi_nameinbanglaColumn" msprop:Generator_ColumnVarNameInTable="columnpi_nameinbangla" msprop:Generator_UserColumnName="pi_nameinbangla" minOccurs="0">
+              <xs:element name="pi_nameinbangla" msprop:Generator_UserColumnName="pi_nameinbangla" msprop:Generator_ColumnPropNameInTable="pi_nameinbanglaColumn" msprop:Generator_ColumnPropNameInRow="pi_nameinbangla" msprop:Generator_ColumnVarNameInTable="columnpi_nameinbangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_farthersname" msprop:Generator_ColumnPropNameInRow="pi_farthersname" msprop:Generator_ColumnPropNameInTable="pi_farthersnameColumn" msprop:Generator_ColumnVarNameInTable="columnpi_farthersname" msprop:Generator_UserColumnName="pi_farthersname" minOccurs="0">
+              <xs:element name="pi_farthersname" msprop:Generator_UserColumnName="pi_farthersname" msprop:Generator_ColumnPropNameInTable="pi_farthersnameColumn" msprop:Generator_ColumnPropNameInRow="pi_farthersname" msprop:Generator_ColumnVarNameInTable="columnpi_farthersname" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_Fathernamebangla" msprop:Generator_ColumnPropNameInRow="pi_Fathernamebangla" msprop:Generator_ColumnPropNameInTable="pi_FathernamebanglaColumn" msprop:Generator_ColumnVarNameInTable="columnpi_Fathernamebangla" msprop:Generator_UserColumnName="pi_Fathernamebangla" minOccurs="0">
+              <xs:element name="pi_Fathernamebangla" msprop:Generator_UserColumnName="pi_Fathernamebangla" msprop:Generator_ColumnPropNameInTable="pi_FathernamebanglaColumn" msprop:Generator_ColumnPropNameInRow="pi_Fathernamebangla" msprop:Generator_ColumnVarNameInTable="columnpi_Fathernamebangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="45" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_permanent_add2" msprop:Generator_ColumnPropNameInRow="pi_permanent_add2" msprop:Generator_ColumnPropNameInTable="pi_permanent_add2Column" msprop:Generator_ColumnVarNameInTable="columnpi_permanent_add2" msprop:Generator_UserColumnName="pi_permanent_add2" minOccurs="0">
+              <xs:element name="pi_permanent_add2" msprop:Generator_UserColumnName="pi_permanent_add2" msprop:Generator_ColumnPropNameInTable="pi_permanent_add2Column" msprop:Generator_ColumnPropNameInRow="pi_permanent_add2" msprop:Generator_ColumnVarNameInTable="columnpi_permanent_add2" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_permanent_add2_bangla" msprop:Generator_ColumnPropNameInRow="pi_permanent_add2_bangla" msprop:Generator_ColumnPropNameInTable="pi_permanent_add2_banglaColumn" msprop:Generator_ColumnVarNameInTable="columnpi_permanent_add2_bangla" msprop:Generator_UserColumnName="pi_permanent_add2_bangla" minOccurs="0">
+              <xs:element name="pi_permanent_add2_bangla" msprop:Generator_UserColumnName="pi_permanent_add2_bangla" msprop:Generator_ColumnPropNameInTable="pi_permanent_add2_banglaColumn" msprop:Generator_ColumnPropNameInRow="pi_permanent_add2_bangla" msprop:Generator_ColumnVarNameInTable="columnpi_permanent_add2_bangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_postoffice_name" msprop:Generator_ColumnPropNameInRow="pi_postoffice_name" msprop:Generator_ColumnPropNameInTable="pi_postoffice_nameColumn" msprop:Generator_ColumnVarNameInTable="columnpi_postoffice_name" msprop:Generator_UserColumnName="pi_postoffice_name" minOccurs="0">
+              <xs:element name="pi_postoffice_name" msprop:Generator_UserColumnName="pi_postoffice_name" msprop:Generator_ColumnPropNameInTable="pi_postoffice_nameColumn" msprop:Generator_ColumnPropNameInRow="pi_postoffice_name" msprop:Generator_ColumnVarNameInTable="columnpi_postoffice_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_postoffice_bangla" msprop:Generator_ColumnPropNameInRow="pi_postoffice_bangla" msprop:Generator_ColumnPropNameInTable="pi_postoffice_banglaColumn" msprop:Generator_ColumnVarNameInTable="columnpi_postoffice_bangla" msprop:Generator_UserColumnName="pi_postoffice_bangla" minOccurs="0">
+              <xs:element name="pi_postoffice_bangla" msprop:Generator_UserColumnName="pi_postoffice_bangla" msprop:Generator_ColumnPropNameInTable="pi_postoffice_banglaColumn" msprop:Generator_ColumnPropNameInRow="pi_postoffice_bangla" msprop:Generator_ColumnVarNameInTable="columnpi_postoffice_bangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_thana_name" msprop:Generator_ColumnPropNameInRow="pi_thana_name" msprop:Generator_ColumnPropNameInTable="pi_thana_nameColumn" msprop:Generator_ColumnVarNameInTable="columnpi_thana_name" msprop:Generator_UserColumnName="pi_thana_name" minOccurs="0">
+              <xs:element name="pi_thana_name" msprop:Generator_UserColumnName="pi_thana_name" msprop:Generator_ColumnPropNameInTable="pi_thana_nameColumn" msprop:Generator_ColumnPropNameInRow="pi_thana_name" msprop:Generator_ColumnVarNameInTable="columnpi_thana_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="th_nameBangla" msprop:Generator_ColumnPropNameInRow="th_nameBangla" msprop:Generator_ColumnPropNameInTable="th_nameBanglaColumn" msprop:Generator_ColumnVarNameInTable="columnth_nameBangla" msprop:Generator_UserColumnName="th_nameBangla" minOccurs="0">
+              <xs:element name="th_nameBangla" msprop:Generator_UserColumnName="th_nameBangla" msprop:Generator_ColumnPropNameInTable="th_nameBanglaColumn" msprop:Generator_ColumnPropNameInRow="th_nameBangla" msprop:Generator_ColumnVarNameInTable="columnth_nameBangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="pi_district_name" msprop:Generator_ColumnPropNameInRow="pi_district_name" msprop:Generator_ColumnPropNameInTable="pi_district_nameColumn" msprop:Generator_ColumnVarNameInTable="columnpi_district_name" msprop:Generator_UserColumnName="pi_district_name" minOccurs="0">
+              <xs:element name="pi_district_name" msprop:Generator_UserColumnName="pi_district_name" msprop:Generator_ColumnPropNameInTable="pi_district_nameColumn" msprop:Generator_ColumnPropNameInRow="pi_district_name" msprop:Generator_ColumnVarNameInTable="columnpi_district_name" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="di_nameBangla" msprop:Generator_ColumnPropNameInRow="di_nameBangla" msprop:Generator_ColumnPropNameInTable="di_nameBanglaColumn" msprop:Generator_ColumnVarNameInTable="columndi_nameBangla" msprop:Generator_UserColumnName="di_nameBangla" minOccurs="0">
+              <xs:element name="di_nameBangla" msprop:Generator_UserColumnName="di_nameBangla" msprop:Generator_ColumnPropNameInTable="di_nameBanglaColumn" msprop:Generator_ColumnPropNameInRow="di_nameBangla" msprop:Generator_ColumnVarNameInTable="columndi_nameBangla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />

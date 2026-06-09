@@ -171,20 +171,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>H. No. 384, Road No. 28,</Value>
-                                          <Style>
-                                            <FontSize>6pt</FontSize>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Center</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value> New DOHS Mohakhali, Dhaka-1206, </Value>
+                                          <Value>=Fields!com_ad1.Value</Value>
                                           <Style>
                                             <FontSize>6pt</FontSize>
                                           </Style>
@@ -228,7 +215,7 @@
                                     <Paragraph>
                                       <TextRuns>
                                         <TextRun>
-                                          <Value>www.debonairgroupbd.com</Value>
+                                          <Value>=Fields!com_email.Value</Value>
                                           <Style>
                                             <FontSize>6pt</FontSize>
                                           </Style>
@@ -534,7 +521,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>1.55448in</Top>
+                                  <Top>1.5562in</Top>
                                   <Left>0.87913in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>1.19642in</Width>
@@ -565,7 +552,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.70031in</Top>
+                                  <Top>1.70203in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
@@ -597,7 +584,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.54198in</Top>
+                                  <Top>1.5437in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
@@ -629,7 +616,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.33851in</Top>
+                                  <Top>2.34023in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
@@ -661,7 +648,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.1892in</Top>
+                                  <Top>2.19092in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
@@ -693,7 +680,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.86351in</Top>
+                                  <Top>1.86523in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
@@ -726,7 +713,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>1.71767in</Top>
+                                  <Top>1.71939in</Top>
                                   <Left>0.87912in</Left>
                                   <Height>0.13889in</Height>
                                   <Width>1.19643in</Width>
@@ -760,7 +747,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>1.87601in</Top>
+                                  <Top>1.87773in</Top>
                                   <Left>0.87912in</Left>
                                   <Height>0.13125in</Height>
                                   <Width>1.19643in</Width>
@@ -795,7 +782,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>2.2017in</Top>
+                                  <Top>2.20342in</Top>
                                   <Left>0.87913in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>1.19642in</Width>
@@ -828,7 +815,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>2.35101in</Top>
+                                  <Top>2.35273in</Top>
                                   <Left>0.87912in</Left>
                                   <Height>0.1395in</Height>
                                   <Width>1.19643in</Width>
@@ -851,6 +838,7 @@
                                         <TextRun>
                                           <Value>=First(Fields!pi_fullname.Value)</Value>
                                           <Style>
+                                            <FontFamily>times New Roman</FontFamily>
                                             <FontSize>8pt</FontSize>
                                           </Style>
                                         </TextRun>
@@ -861,7 +849,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.21629in</Top>
+                                  <Top>1.09301in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.20678in</Height>
                                   <Width>1.81444in</Width>
@@ -885,6 +873,7 @@
                                         <TextRun>
                                           <Value>=First(Fields!oi_designation_name.Value)</Value>
                                           <Style>
+                                            <FontFamily>times New Roman</FontFamily>
                                             <FontSize>6pt</FontSize>
                                           </Style>
                                         </TextRun>
@@ -895,7 +884,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.36335in</Top>
+                                  <Top>1.24007in</Top>
                                   <Left>0.29139in</Left>
                                   <Height>0.17168in</Height>
                                   <Width>1.78416in</Width>
@@ -927,7 +916,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.95938in</Top>
+                                  <Top>2.9611in</Top>
                                   <Left>1.35444in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.71972in</Width>
@@ -965,7 +954,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.54198in</Top>
+                                  <Top>1.5437in</Top>
                                   <Left>0.76694in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.10524in</Width>
@@ -998,7 +987,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.70031in</Top>
+                                  <Top>1.70203in</Top>
                                   <Left>0.76833in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.10524in</Width>
@@ -1031,7 +1020,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>1.86351in</Top>
+                                  <Top>1.86523in</Top>
                                   <Left>0.76447in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.10524in</Width>
@@ -1064,7 +1053,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.33851in</Top>
+                                  <Top>2.34023in</Top>
                                   <Left>0.76447in</Left>
                                   <Height>0.14737in</Height>
                                   <Width>0.10524in</Width>
@@ -1097,7 +1086,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.1892in</Top>
+                                  <Top>2.19092in</Top>
                                   <Left>0.77003in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.10524in</Width>
@@ -1116,10 +1105,10 @@
                                   <Source>External</Source>
                                   <Value>=Parameters!EmpImagePath.Value &amp;Fields!compid.Value &amp;"/" &amp; Fields!emp_no.Value &amp;".JPG"</Value>
                                   <Sizing>Fit</Sizing>
-                                  <Top>0.496in</Top>
-                                  <Left>0.74332in</Left>
-                                  <Height>0.70363in</Height>
-                                  <Width>0.71529in</Width>
+                                  <Top>0.04183in</Top>
+                                  <Left>1.20497in</Left>
+                                  <Height>0.90916in</Height>
+                                  <Width>0.87302in</Width>
                                   <ZIndex>18</ZIndex>
                                   <Style>
                                     <Border>
@@ -1149,6 +1138,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox2</rd:DefaultName>
+                                  <Top>0.00172in</Top>
                                   <Height>3.36562in</Height>
                                   <Width>0.26361in</Width>
                                   <ZIndex>19</ZIndex>
@@ -1156,7 +1146,7 @@
                                     <Border>
                                       <Style>None</Style>
                                     </Border>
-                                    <BackgroundColor>MidnightBlue</BackgroundColor>
+                                    <BackgroundColor>Blue</BackgroundColor>
                                     <VerticalAlign>Middle</VerticalAlign>
                                     <PaddingLeft>2pt</PaddingLeft>
                                     <PaddingRight>2pt</PaddingRight>
@@ -1182,7 +1172,7 @@
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.95938in</Top>
+                                  <Top>2.9611in</Top>
                                   <Left>0.29938in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.71972in</Width>
@@ -1203,13 +1193,13 @@
                                   </Style>
                                 </Textbox>
                                 <Image Name="Image5">
-                                  <Source>Embedded</Source>
-                                  <Value>Dg_Logo</Value>
+                                  <Source>External</Source>
+                                  <Value>=Parameters!compLogo.Value</Value>
                                   <Sizing>FitProportional</Sizing>
-                                  <Top>0.0165in</Top>
-                                  <Left>0.94124in</Left>
-                                  <Height>0.30451in</Height>
-                                  <Width>0.31945in</Width>
+                                  <Top>0.05in</Top>
+                                  <Left>0.32055in</Left>
+                                  <Height>0.40868in</Height>
+                                  <Width>0.82886in</Width>
                                   <ZIndex>21</ZIndex>
                                   <Visibility>
                                     <Hidden>=IIF(Fields!compid.Value=61
@@ -1224,49 +1214,6 @@ or Fields!compid.Value=58
                                     </Border>
                                   </Style>
                                 </Image>
-                                <Textbox Name="Textbox25">
-                                  <CanGrow>true</CanGrow>
-                                  <KeepTogether>true</KeepTogether>
-                                  <Paragraphs>
-                                    <Paragraph>
-                                      <TextRuns>
-                                        <TextRun>
-                                          <Value>Debonair Group</Value>
-                                          <Style>
-                                            <FontSize>8pt</FontSize>
-                                            <FontWeight>Bold</FontWeight>
-                                            <Color>DarkBlue</Color>
-                                          </Style>
-                                        </TextRun>
-                                      </TextRuns>
-                                      <Style>
-                                        <TextAlign>Center</TextAlign>
-                                      </Style>
-                                    </Paragraph>
-                                  </Paragraphs>
-                                  <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>0.28419in</Top>
-                                  <Left>0.4661in</Left>
-                                  <Height>0.21181in</Height>
-                                  <Width>1.26972in</Width>
-                                  <ZIndex>22</ZIndex>
-                                  <Visibility>
-                                    <Hidden>=IIF(Fields!compid.Value=61
-or Fields!compid.Value=54
-or Fields!compid.Value=55
-or Fields!compid.Value=58
-,true,false)</Hidden>
-                                  </Visibility>
-                                  <Style>
-                                    <Border>
-                                      <Style>None</Style>
-                                    </Border>
-                                    <PaddingLeft>2pt</PaddingLeft>
-                                    <PaddingRight>2pt</PaddingRight>
-                                    <PaddingTop>2pt</PaddingTop>
-                                    <PaddingBottom>2pt</PaddingBottom>
-                                  </Style>
-                                </Textbox>
                                 <Textbox Name="Textbox26">
                                   <CanGrow>true</CanGrow>
                                   <KeepTogether>true</KeepTogether>
@@ -1284,11 +1231,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.02254in</Top>
+                                  <Top>2.02426in</Top>
                                   <Left>0.26667in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.57805in</Width>
-                                  <ZIndex>23</ZIndex>
+                                  <ZIndex>22</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1317,11 +1264,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>2.03504in</Top>
+                                  <Top>2.03676in</Top>
                                   <Left>0.88468in</Left>
                                   <Height>0.14375in</Height>
                                   <Width>1.19087in</Width>
-                                  <ZIndex>24</ZIndex>
+                                  <ZIndex>23</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1351,11 +1298,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.02254in</Top>
+                                  <Top>2.02426in</Top>
                                   <Left>0.77003in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>0.10524in</Width>
-                                  <ZIndex>25</ZIndex>
+                                  <ZIndex>24</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1383,11 +1330,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.47407in</Top>
+                                  <Top>2.47579in</Top>
                                   <Left>0.26111in</Left>
                                   <Height>0.25806in</Height>
                                   <Width>0.57805in</Width>
-                                  <ZIndex>26</ZIndex>
+                                  <ZIndex>25</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1416,11 +1363,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox12</rd:DefaultName>
-                                  <Top>2.49907in</Top>
+                                  <Top>2.50079in</Top>
                                   <Left>0.87912in</Left>
                                   <Height>0.15625in</Height>
                                   <Width>1.19643in</Width>
-                                  <ZIndex>27</ZIndex>
+                                  <ZIndex>26</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1449,11 +1396,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox19</rd:DefaultName>
-                                  <Top>2.49907in</Top>
+                                  <Top>2.50079in</Top>
                                   <Left>0.76447in</Left>
                                   <Height>0.14737in</Height>
                                   <Width>0.10524in</Width>
-                                  <ZIndex>28</ZIndex>
+                                  <ZIndex>27</ZIndex>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -1468,11 +1415,11 @@ or Fields!compid.Value=58
                                   <Source>External</Source>
                                   <Value>=Parameters!EmpSign.Value &amp;Fields!compid.Value &amp;"/" &amp; Fields!emp_no.Value &amp;".png"</Value>
                                   <Sizing>Fit</Sizing>
-                                  <Top>2.74324in</Top>
+                                  <Top>2.74496in</Top>
                                   <Left>0.32041in</Left>
                                   <Height>0.19457in</Height>
                                   <Width>0.69869in</Width>
-                                  <ZIndex>29</ZIndex>
+                                  <ZIndex>28</ZIndex>
                                   <Visibility>
                                     <Hidden>=IIF(Fields!IsShowEmpSign.Value=True,False, True)</Hidden>
                                   </Visibility>
@@ -1486,11 +1433,11 @@ or Fields!compid.Value=58
                                   <Source>External</Source>
                                   <Value>=Parameters!AuthSign.Value &amp;Fields!compid.Value &amp;".jpg"</Value>
                                   <Sizing>Fit</Sizing>
-                                  <Top>2.74324in</Top>
+                                  <Top>2.74496in</Top>
                                   <Left>1.36694in</Left>
                                   <Height>0.19457in</Height>
                                   <Width>0.69869in</Width>
-                                  <ZIndex>30</ZIndex>
+                                  <ZIndex>29</ZIndex>
                                   <Visibility>
                                     <Hidden>=IIF(Fields!compid.Value=61
 or Fields!compid.Value=54
@@ -1519,11 +1466,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox4</rd:DefaultName>
-                                  <Top>2.7645in</Top>
+                                  <Top>2.76622in</Top>
                                   <Left>0.33305in</Left>
                                   <Height>0.15685in</Height>
                                   <Width>0.68605in</Width>
-                                  <ZIndex>31</ZIndex>
+                                  <ZIndex>30</ZIndex>
                                   <Visibility>
                                     <Hidden>=IIF(Fields!IsShowEmpSign.Value=True,True, False)</Hidden>
                                   </Visibility>
@@ -1552,11 +1499,11 @@ or Fields!compid.Value=58
                                     </Paragraph>
                                   </Paragraphs>
                                   <rd:DefaultName>Textbox4</rd:DefaultName>
-                                  <Top>2.88174in</Top>
+                                  <Top>2.88346in</Top>
                                   <Left>1.35444in</Left>
                                   <Height>0.03182in</Height>
                                   <Width>0.68605in</Width>
-                                  <ZIndex>32</ZIndex>
+                                  <ZIndex>31</ZIndex>
                                   <Visibility>
                                     <Hidden>=IIF(
    (Fields!compid.Value = 61 OR
@@ -1579,9 +1526,9 @@ or Fields!compid.Value=58
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>0.02985in</Top>
+                              <Top>0.02813in</Top>
                               <Left>2.28028in</Left>
-                              <Height>3.37341in</Height>
+                              <Height>3.37513in</Height>
                               <Width>2.12832in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
@@ -1691,6 +1638,12 @@ or Fields!compid.Value=58
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="compLogo">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -1716,6 +1669,11 @@ or Fields!compid.Value=58
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>QR</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>compLogo</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

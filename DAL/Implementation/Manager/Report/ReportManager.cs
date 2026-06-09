@@ -142,13 +142,15 @@ namespace DAL.Implementation.Manager.Report
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_EmployeeDetails "+ companyID + ",'"+ userName + "'", _connection);
             this.AddDataColumnWithBarcode(data, 4);
             string dataset = "ID";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Dg_IDCard.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_IDCard.rdlc";
             string imgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeImage\\").AbsoluteUri;
             string imgPathQR = new Uri($"{_webHostEnvironment.WebRootPath}\\Employee_QRCode\\DG_QR_Code.jpg").AbsoluteUri;
+            string imgCompLogo = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\comp_logo.png").AbsoluteUri;
             string imgPathEmpSign = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeSignature\\").AbsoluteUri;
             string imgPathAuthSign = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
+                new ReportParameter ("compLogo", imgCompLogo),
                 new ReportParameter("EmpImagePath",imgPath),
                 new ReportParameter("QR",imgPathQR),
                 new ReportParameter("EmpSign",imgPathEmpSign),
@@ -166,9 +168,11 @@ namespace DAL.Implementation.Manager.Report
             string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_IDCardBangla.rdlc";
             string imgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeImage\\").AbsoluteUri;
             string imgPathEmpSign = new Uri($"{_webHostEnvironment.WebRootPath}\\EmployeeSignature\\").AbsoluteUri;
+            string imgCompLogo = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\comp_logo.png").AbsoluteUri;
             string imgPathAuthSign = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
+                new ReportParameter ("compLogo", imgCompLogo),
                 new ReportParameter("EmpImagePath",imgPath),
                 new ReportParameter("EmpSign",imgPathEmpSign),
                 new ReportParameter("AuthSign",imgPathAuthSign)
@@ -989,7 +993,7 @@ namespace DAL.Implementation.Manager.Report
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_Leave_from "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "leaveForm";
             string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_LeaveForm.rdlc";
-            string groupLogoImgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\GroupLogo.png").AbsoluteUri;
+            string groupLogoImgPath = new Uri($"{_webHostEnvironment.WebRootPath}\\AuthSign\\comp_logo.png").AbsoluteUri;
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("groupLogo",groupLogoImgPath)

@@ -1887,7 +1887,7 @@ namespace DAL.Implementation.Manager.UploadAttendances
                     textFileLine = replaceLine.Substring(0, 22);
                 }
             }
-            else if (txt_id == 19 || txt_id == 15 || txt_id == 13 || txt_id == 14 || txt_id == 21 || txt_id == 22 || txt_id == 23 || txt_id == 24 || txt_id == 25 || txt_id == 26 || txt_id == 27 || txt_id == 28 || txt_id == 29 || txt_id == 30 || txt_id == 31 || txt_id == 32 || txt_id == 33 || txt_id == 34 || txt_id == 35 || txt_id == 37) //new
+            else if (txt_id == 19 || txt_id == 15 || txt_id == 13 || txt_id == 14 || txt_id == 21 || txt_id == 22 || txt_id == 23 || txt_id == 24 || txt_id == 25 || txt_id == 26 || txt_id == 27 || txt_id == 28 || txt_id == 29 || txt_id == 30 || txt_id == 31 || txt_id == 32 || txt_id == 33 || txt_id == 34 || txt_id == 35 || txt_id == 37 || txt_id == 40) //new
             {
                 if (replaceLine.Length < 22)
                 {
@@ -1905,7 +1905,7 @@ namespace DAL.Implementation.Manager.UploadAttendances
                     textFileLine = replaceLine.Substring(0, 22);
                 }
             }
-            else if (txt_id == 16 || txt_id == 40)
+            else if (txt_id == 16)
             {
                 if (replaceLine.Length < 22)
                 {

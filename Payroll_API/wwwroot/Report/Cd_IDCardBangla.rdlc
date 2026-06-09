@@ -2920,8 +2920,8 @@ or Fields!compid.Value=58
                                 <Rectangle Name="Rectangle4">
                                   <ReportItems>
                                     <Image Name="Image5">
-                                      <Source>Embedded</Source>
-                                      <Value>Dg_Logo</Value>
+                                      <Source>External</Source>
+                                      <Value>=Parameters!compLogo.Value</Value>
                                       <Sizing>FitProportional</Sizing>
                                       <Height>0.25034in</Height>
                                       <Width>0.26389in</Width>
@@ -3059,6 +3059,12 @@ or Fields!compid.Value=58
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
+    <ReportParameter Name="compLogo">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -3079,6 +3085,11 @@ or Fields!compid.Value=58
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>AuthSign</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>compLogo</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
