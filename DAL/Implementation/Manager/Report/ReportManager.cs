@@ -550,7 +550,7 @@ namespace DAL.Implementation.Manager.Report
 
             var data = _dgCommon.get_InformationDataTable("Dg_Pay_Rep_Shift_change_history_New '" + obj.Compid + "','"+ obj.Department + "','" + obj.section + "','" + obj.Building + "','" + obj.Floor + "','" + obj.Line + "','" + obj.Shift + "','" + obj.Grade + "','" + obj.Start_date + "','" + obj.End_date + "','" + obj.User + "','" + empID + "','" + salCatID + "'", _connection);
             string dataset = "DataSet1";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\dg_emp_shiftchange_history.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Cd_emp_shiftchange_history.rdlc";
             ReportParameterCollection reportParameters = new ReportParameterCollection
             {
                 new ReportParameter("PrintUser",obj.User),
@@ -1654,7 +1654,7 @@ namespace DAL.Implementation.Manager.Report
         {
             var data = _dgCommon.get_InformationDataTable("dg_Rep_Sal_PaySlip "+ companyID + ",'"+ userName + "'", _connection);
             string dataset = "PaySlip";
-            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Sal_PaySlip_Debonir.rdlc";
+            string path = $"{_webHostEnvironment.WebRootPath}\\Report\\Sal_PaySlip_Rpt.rdlc";
             byte[] reportBytes = _dgCommon.GenerateReport(data, dataset, path, reportType);
             _dgCommon.saveChanges("delete dg_print_employeelist_salary where pl_user='" + userName + "'", _connection);
             return reportBytes;

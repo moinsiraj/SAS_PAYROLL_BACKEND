@@ -19,8 +19,8 @@ namespace DAL.Implementation.Manager.ShiftChanges
             _connection = new SqlConnection(Getway.Dg_Payroll);
         }
 
-        public async Task<DataSet> FilterBase_employeelist(int? Compid = null, int? Department = null, 
-            int? section = null, int? Building = null, int? Floor = null, int? Line = null, 
+        public async Task<DataSet> FilterBase_employeelist(int? Compid = null, int? Department = null,
+            int? section = null, int? Building = null, int? Floor = null, int? Line = null,
             int? Shift = null, int? Grade = null, int? salcat = null)
         {
             var data = await _dgCommon.get_InformationDtasetAsync("Emp_filtering_list "+ Compid + ","+ Department + "," +
@@ -282,21 +282,32 @@ namespace DAL.Implementation.Manager.ShiftChanges
                 {
                     obj.rosterChild.ToList().ForEach(item =>
                     {
-                        bool isSave = _dgCommon.saveChanges("Dg_Pay_Save_ShiftRoll_EmpWise " + obj.companyID + "," + item.rGroupId + "," + item.empSerial + "," + item.empId + ",'" + obj.fDate + "','" + obj.userName + "'", _connection);
-                        if (isSave)
+                        if (item.rGroupId > 0)
                         {
-                            result.Add(new ReturnObject
+                            bool isSave = _dgCommon.saveChanges("Dg_Pay_Save_ShiftRoll_EmpWise " + obj.companyID + "," + item.rGroupId + "," + item.empSerial + "," + item.empId + ",'" + obj.fDate + "','" + obj.userName + "'", _connection);
+                            if (isSave)
                             {
-                                IsSuccess = true,
-                                Message = "Employee No(" + item.empId + ") Save Successfully !!"
-                            });
+                                result.Add(new ReturnObject
+                                {
+                                    IsSuccess = true,
+                                    Message = "Employee No(" + item.empId + ") Save Successfully !!"
+                                });
+                            }
+                            else
+                            {
+                                result.Add(new ReturnObject
+                                {
+                                    IsSuccess = false,
+                                    Message = "Employee No(" + item.empId + ") Save Fail !!"
+                                });
+                            }
                         }
                         else
                         {
                             result.Add(new ReturnObject
                             {
                                 IsSuccess = false,
-                                Message = "Employee No(" + item.empId + ") Save Fail !!"
+                                Message = "Employee No(" + item.empId + ") Save Fail Shift Group Id Zero !!"
                             });
                         }
                     });

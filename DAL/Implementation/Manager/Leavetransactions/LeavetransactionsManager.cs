@@ -130,7 +130,7 @@ namespace DAL.Implementation.Manager.Leavetransactions
                 {
                     int compid = int.Parse(row["compid"].ToString());
                     int empno = int.Parse(row["emp_no"].ToString());
-                    string imagePath = string.Format("http://203.202.240.228:8085/EmployeeImage/{0}/{1}.jpg", compid, empno);
+                    string imagePath = string.Format("http://103.125.255.105/payroll_service/EmployeeImage/{0}/{1}.jpg", compid, empno);
                     using (HttpClient client = new HttpClient())
                     {
                         var response = await client.GetAsync(imagePath);

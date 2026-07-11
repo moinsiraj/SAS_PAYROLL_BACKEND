@@ -466,12 +466,11 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.16in</Height>
+                  <Height>0.22944in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="com_nameBangla">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -524,7 +523,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="com_name">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -580,12 +578,11 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13332in</Height>
+                  <Height>0.23054in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox44">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -663,7 +660,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox52">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -776,7 +772,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="pi_nameinbangla">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -874,7 +869,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="oi_bankacno">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -960,7 +954,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_emp_name1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1049,7 +1042,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="oi_bankacno1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1139,7 +1131,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="dec_name_bangla">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1292,7 +1283,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_designation1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1463,7 +1453,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_emp_no">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1619,7 +1608,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_emp_no1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1782,7 +1770,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_joindate">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -1957,7 +1944,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_joindate1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2120,7 +2106,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_edays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2185,7 +2170,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_grade">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2278,7 +2262,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_edays2">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2344,7 +2327,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_grade1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2440,7 +2422,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_workabledays1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2505,7 +2486,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_casualleave">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2598,7 +2578,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_workabledays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2664,7 +2643,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_casualleave1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2762,7 +2740,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_absentdays1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2827,7 +2804,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_presentdays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2920,7 +2896,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_absentdays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -2986,7 +2961,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_presentdays1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3084,7 +3058,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_weeklyholidays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3149,7 +3122,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox60">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3230,7 +3202,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_weeklyholidays1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3296,7 +3267,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_overtimehrs">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3346,7 +3316,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.11052in</Height>
+                  <Height>0.15913in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3394,7 +3364,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_specialholidays">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3486,7 +3455,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_overtimerate">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3506,7 +3474,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>ss_pvs_overtimerate</rd:DefaultName>
@@ -3514,10 +3484,6 @@
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -3566,7 +3532,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_specialholidays1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3658,7 +3623,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_overtimerate1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3798,7 +3762,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_basicsalary">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3840,7 +3803,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_basicsalary2">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -3976,7 +3938,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox76">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4017,7 +3978,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_basicsalary1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4144,7 +4104,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_houserent">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4172,7 +4131,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_houserent">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4298,7 +4256,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox78">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4326,7 +4283,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_houserent1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4453,7 +4409,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_medical">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4481,7 +4436,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_medical">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4607,7 +4561,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox82">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4635,7 +4588,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_medical1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4762,7 +4714,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_food">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4790,7 +4741,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_food">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4916,7 +4866,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox84">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -4944,7 +4893,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_food1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5071,7 +5019,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_traveling">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5099,7 +5046,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_traveling">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5225,7 +5171,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox86">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5253,7 +5198,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_traveling1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5303,7 +5247,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.12246in</Height>
+                  <Height>0.16413in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -5396,7 +5340,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_grossalary">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5437,7 +5380,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_grossalary1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5572,7 +5514,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox88">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5613,7 +5554,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_grossalary">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5743,7 +5683,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_attbonus">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -5881,7 +5820,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_attbonus1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6041,7 +5979,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_tiffin_bill">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6168,7 +6105,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_tiffin_bill1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6301,7 +6237,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_otherallowances">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6428,7 +6363,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_otherallowances1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6560,7 +6494,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_holidayallowances">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6686,7 +6619,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_holidayallowances1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -6850,7 +6782,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_night_bill">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7025,7 +6956,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_night_bill1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7075,7 +7005,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.11052in</Height>
+                  <Height>0.14524in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -7153,7 +7083,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_attbonus2">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7292,7 +7221,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox196">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7344,7 +7272,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.11052in</Height>
+                  <Height>0.16608in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -7418,7 +7346,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pvs_overtimevalue">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7462,7 +7389,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_overtimevalue">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7510,7 +7436,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox201">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7582,7 +7507,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox203">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7626,7 +7550,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_overtimevalue1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7673,7 +7596,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.11052in</Height>
+                  <Height>0.16608in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -7749,7 +7672,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_payablesal">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7794,7 +7716,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox209">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -7909,7 +7830,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_payablesal1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8085,7 +8005,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_absence">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8263,7 +8182,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_absence1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8394,7 +8312,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_lunch_bill">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8531,7 +8448,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_lunch_bill1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8659,7 +8575,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pf1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8798,7 +8713,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_pf">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -8925,7 +8839,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_otherdeduction4">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9070,7 +8983,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_Arrear">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9211,7 +9123,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_otherdeduction1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9356,7 +9267,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_otherdeduction">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9492,7 +9402,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_tax">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9632,7 +9541,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_tax1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9772,7 +9680,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_stamp">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9912,7 +9819,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_stamp1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -9965,7 +9871,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.11052in</Height>
+                  <Height>0.15219in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -10030,7 +9936,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox264">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -10134,7 +10039,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox4">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -10174,7 +10078,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.1001in</Height>
+                  <Height>0.14177in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -10254,7 +10158,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_netsalary">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -10418,7 +10321,6 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="ss_netsalary1">
-                          <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
@@ -10463,397 +10365,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.1001in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox277">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> Ifvi UvBg</Value>
-                                  <Style>
-                                    <FontFamily>SutonnyMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox277</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox26">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> (gyj †eZb/208)*2</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>SutonnyMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Normal</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox26</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox281">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> Basis of OT Calculation</Value>
-                                  <Style>
-                                    <FontFamily>Calibri</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox281</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox283">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> (Basic / 208) x 2</Value>
-                                  <Style>
-                                    <FontFamily>Calibri</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox283</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.10743in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox1">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> অনুপস্থিতি কর্তন</Value>
-                                  <Style>
-                                    <FontFamily>SutonnyOMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox1</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox34">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> (মুল বেতন/</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>SutonnyOMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Normal</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>30</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>SutonnyMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Normal</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                                <TextRun>
-                                  <Value>)*অনুপস্থিতি</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontFamily>SutonnyOMJ</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Normal</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                    <Color>#000000</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox34</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Style>None</Style>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox5">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> Basis of Absenteeism</Value>
-                                  <Style>
-                                    <FontFamily>Calibri</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox5</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>None</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox30">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value> (Basic/ 30) x Absent Days</Value>
-                                  <Style>
-                                    <FontFamily>Calibri</FontFamily>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox30</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Style>None</Style>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>None</Style>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Width>1pt</Width>
-                            </RightBorder>
-                          </Style>
-                        </Textbox>
-                        <ColSpan>2</ColSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell />
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.11331in</Height>
+                  <Height>0.27303in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -10948,7 +10460,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.18985in</Height>
+                  <Height>0.28707in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -10975,13 +10487,10 @@
                               <Color>LightGrey</Color>
                               <Style>None</Style>
                             </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                           </Style>
                         </Textbox>
                         <ColSpan>8</ColSpan>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -11140,8 +10649,6 @@
                                 <TablixMember />
                                 <TablixMember />
                                 <TablixMember />
-                                <TablixMember />
-                                <TablixMember />
                               </TablixMembers>
                             </TablixMember>
                           </TablixMembers>
@@ -11158,7 +10665,7 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Left>0.01042in</Left>
-            <Height>4.23723in</Height>
+            <Height>4.77276in</Height>
             <Width>7.8in</Width>
             <Style>
               <Border>
@@ -11167,7 +10674,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>4.24605in</Height>
+        <Height>4.77276in</Height>
         <Style />
       </Body>
       <Width>7.81042in</Width>

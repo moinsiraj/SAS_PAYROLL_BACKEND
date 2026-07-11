@@ -137,7 +137,8 @@ namespace BOL.Models
                 new DataColumn("at_ot_ex_ot_hour_min",typeof(decimal)),
                 new DataColumn("at_ot_ex_ot_hour_min_with_wh_ot",typeof(decimal)),
                 new DataColumn("at_holiday_ot_for_oneday",typeof(decimal)),
-                new DataColumn("at_ot_process_by",typeof(string))
+                new DataColumn("at_ot_process_by",typeof(string)),
+                new DataColumn("at_Extra_work_day_wh",typeof(decimal))
             };
             dt.Columns.AddRange(columns);
             return dt;
@@ -162,6 +163,7 @@ namespace BOL.Models
             row["at_ot_ex_ot_hour_min_with_wh_ot"] = decimal.Parse(setResult.Rows[0]["at_ot_ex_ot_hour_min_with_wh_ot"].ToString());
             row["at_holiday_ot_for_oneday"] = decimal.Parse(setResult.Rows[0]["at_holiday_ot_for_oneday"].ToString());
             row["at_ot_process_by"] = userName;
+            row["at_Extra_work_day_wh"] = !string.IsNullOrEmpty(setResult.Rows[0]["at_Extra_work_day_wh"].ToString()) ? decimal.Parse(setResult.Rows[0]["at_Extra_work_day_wh"].ToString()) : 0;
             getResult.Rows.Add(row);
         }
         public static DataTable AddNewDataColumnESum()
