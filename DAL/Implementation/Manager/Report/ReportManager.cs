@@ -1119,7 +1119,7 @@ namespace DAL.Implementation.Manager.Report
             {
                 new ReportParameter("PrintUser",ReportTitle.PrintUser),
                 new ReportParameter("Title",string.Concat("Attendance Absent - ",ReportTitle.DepartmentName,ReportTitle.SectionName,ReportTitle.BuildingName,ReportTitle.LineName)),
-                new ReportParameter("Title2",string.Concat("Form - ",Convert.ToDateTime(ReportTitle.StartDate).ToString("dd-MMM-yyyy")," To - ",Convert.ToDateTime(ReportTitle.EndDate).ToString("dd-MMM-yyyy")))
+                new ReportParameter("Title2",string.Concat("From - ",Convert.ToDateTime(ReportTitle.StartDate).ToString("dd-MMM-yyyy")," To - ",Convert.ToDateTime(ReportTitle.EndDate).ToString("dd-MMM-yyyy")))
             };
             byte[] reportBytes = _dgCommon.GenerateReport(data, dataset, path, reportType, reportParameters);
             _dgCommon.saveChanges("delete dg_print_employeelist_atttendance where pl_user='" + userName + "'", _connection);
