@@ -800,6 +800,180 @@ namespace DAL.Implementation.Manager.UploadAttendances
             }
             return response;
         }
+        public async Task<List<TextUploadMessage>> ReadAttnTextFile_NewWithTrg(UploadFile model)
+        {
+            var response = new List<TextUploadMessage>();
+            try
+            {
+                if (Path.GetExtension(model.file.FileName) == ".txt" || Path.GetExtension(model.file.FileName) == ".xlsx")
+                {
+                    int numDateIndex = 0;
+                    int dateLength = 0;
+                    int numHourIndex = 0;
+                    int HourLength = 0;
+                    int numMinuteIndex = 0;
+                    int MinuteLength = 0;
+                    int numProxyIndex = 0;
+                    int ProxyLength = 0;
+                    if (model.file.Length > 0)
+                    {
+                        await _hubContext.Clients.Group(string.Concat("bTxtUp_", model.CompanyID, "_", model.userName)).SendAsync("TxtUp_ReceiveProgress", 0);
+                        var checkProcess = await GetIsAllProcessContinue(model.CompanyID, DateTime.Now.ToString("MM/dd/yyyy"), "att_text_upload", model.userName);
+                        if (checkProcess.dataTable != null)
+                        {
+                            response.Add(new TextUploadMessage { IsSuccess = false, Message = "Someone Is Processing !!" });
+                            return response;
+                        }
+                        var dtCheckSalProc = await _dgCommon.get_InformationDataTableAsync(string.Format("select procs_compid from dg_pay_Process_startOrStop where procs_compid={0} and procs_type in('emp_sal_process_bulk','emp_sal_process_Single') group by procs_compid", model.CompanyID), _sqlConnection);
+                        if (dtCheckSalProc.Rows.Count > 0)
+                        {
+                            response.Add(new TextUploadMessage { IsSuccess = false, Message = "Salary Process In Progress,Please Wait... !!" });
+                            return response;
+                        }
+                        var dtCheckOtProc = await _dgCommon.get_InformationDataTableAsync(string.Format("select procs_compid from dg_pay_Process_startOrStop where procs_compid={0} and procs_type in('att_ot_process','att_Hdot_process') group by procs_compid", model.CompanyID), _sqlConnection);
+                        if (dtCheckOtProc.Rows.Count > 0)
+                        {
+                            response.Add(new TextUploadMessage { IsSuccess = false, Message = "OT Process In Progress,Please Wait... !!" });
+                            return response;
+                        }
+
+                        await _dgCommon.saveChangesAsync(string.Format("dg_pay_processStartOrStop_insert {0},'{1}',{2},'{3}','{4}'", model.CompanyID, "att_text_upload", 1, DateTime.Now.ToString("MM/dd/yyyy"), model.userName), _sqlConnection);
+                        var dtAttSetup = await this.GetAttenTextSetupFull(model.txt_formatID);
+                        if (dtAttSetup.Rows.Count > 0)
+                        {
+                            numHourIndex = int.Parse(dtAttSetup.Rows[0]["txt_hrs_start"].ToString());
+                            HourLength = int.Parse(dtAttSetup.Rows[0]["txt_hrs_end"].ToString());
+                            numMinuteIndex = int.Parse(dtAttSetup.Rows[0]["txt_min_start"].ToString());
+                            MinuteLength = int.Parse(dtAttSetup.Rows[0]["txt_min_end"].ToString());
+                            numProxyIndex = int.Parse(dtAttSetup.Rows[0]["txt_proxid_start"].ToString());
+                            ProxyLength = int.Parse(dtAttSetup.Rows[0]["txt_proxid_end"].ToString());
+                            numDateIndex = int.Parse(dtAttSetup.Rows[0]["txt_dt_start"].ToString());
+                            dateLength = int.Parse(dtAttSetup.Rows[0]["txt_dt_end"].ToString());
+
+                            string filepath = $"{_webHostEnvironment.WebRootPath}\\TextFileUpload\\";
+                            string[] fileArr = new string[] { filepath, model.CompanyID.ToString(), "_", null, null, null, null, null, ".txt" };
+                            fileArr[3] = DateTime.Now.Day.ToString();
+                            fileArr[4] = DateTime.Now.Month.ToString();
+                            fileArr[5] = DateTime.Now.Year.ToString();
+                            fileArr[6] = DateTime.Now.Minute.ToString();
+                            fileArr[7] = DateTime.Now.Second.ToString();
+                            string fileFull = string.Concat(fileArr);
+
+                            if (Path.GetExtension(model.file.FileName) == ".xlsx")
+                            {
+                                var worksheet = await _dgCommon.GetExcelWorkSheet(model.file, 0);
+                                var rowCount = worksheet.Dimension.Rows;
+                                if (rowCount != 0)
+                                {
+                                    using (FileStream fs = File.Create(fileFull))
+                                    using (var writer = new StreamWriter(fs))
+                                    {
+                                        for (int row = 2; row <= rowCount; row++)
+                                        {
+                                            if (!string.IsNullOrEmpty(worksheet.Cells[row, 1].Text) && !string.IsNullOrEmpty(worksheet.Cells[row, 2].Text))
+                                            {
+                                                var rowValues = string.Concat(worksheet.Cells[row, 1].Value, worksheet.Cells[row, 2].Value);
+                                                writer.WriteLine(rowValues);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                using (var stream = new FileStream(fileFull, FileMode.Create))
+                                {
+                                    await model.file.CopyToAsync(stream);
+                                }
+                            }
+
+                            var fileLines = File.ReadAllLines(fileFull);
+                            var epmProxid = _dgCommon.get_InformationDataTable(string.Format("select emp_proxid from dg_pay_Employee where compid={0}", model.CompanyID), _sqlConnection).AsEnumerable().Select(row => row["emp_proxid"].ToString().Trim()).
+                                Where(id => !string.IsNullOrEmpty(id)).ToArray();
+                            var filteredLines = fileLines.Where(line => epmProxid.Any(keyword => line.Contains(keyword, StringComparison.OrdinalIgnoreCase))).ToArray();
+                            if (filteredLines.Length > 0)
+                            {
+                                var employeeSerialMap = _dgCommon.get_InformationDataTable(string.Format("select emp_serial,emp_no,emp_proxid from dg_pay_Employee where compid={0} and oi_active=1", model.CompanyID), _sqlConnection)
+                                    .AsEnumerable().ToDictionary(row => row["emp_proxid"].ToString().Trim(), row => new { emp_serial = row["emp_serial"].ToString(), emp_no = row["emp_no"].ToString() });
+                                var resEmpNo = new List<TextUploadResponseEmp>();
+                                int loopCount = 0;
+                                foreach (var line in filteredLines)
+                                {
+                                    var dtProcessC = await _dgCommon.get_InformationDataTableAsync(string.Format("select procs_status from dg_pay_Process_startOrStop where procs_compid={0} and procs_date='{1}' and procs_type='att_text_upload'", model.CompanyID, DateTime.Now.ToString("MM/dd/yyyy")), _sqlConnection);
+                                    bool isProcess = (dtProcessC.Rows.Count > 0 && !string.IsNullOrEmpty(dtProcessC.Rows[0]["procs_status"].ToString())) ? bool.Parse(dtProcessC.Rows[0]["procs_status"].ToString()) : false;
+                                    if (isProcess)
+                                    {
+                                        string textFileLine = this.GetCompanyTextFormat(line, model.txt_formatID);
+                                        string setDate = this.MakeDateFormat(textFileLine.Substring(numDateIndex, dateLength).Trim(), model.DateFormat); //Date Format yyyy/MM/dd
+                                        string setProxy = textFileLine.Substring(numProxyIndex, ProxyLength).Trim();
+                                        string[] timeArr = new string[] { textFileLine.Substring(numHourIndex, HourLength).Trim(), ".", textFileLine.Substring(numMinuteIndex, MinuteLength).Trim() };
+                                        string ntime = string.Concat(timeArr);
+                                        if (ntime == "00.00")
+                                        {
+                                            ntime = ntime.Substring(0, 4);
+                                            ntime = ntime.Insert(4, "1");
+                                        }
+                                        if (employeeSerialMap.TryGetValue(setProxy, out var emp))
+                                        {
+                                            string empSerial = emp.emp_serial;
+                                            string emp_no = emp.emp_no;
+                                            if (!string.IsNullOrEmpty(empSerial))
+                                            {
+                                                bool flag = await _dgCommon.saveChangesAsync(string.Format("dg_pay_Att_Insert_Textfile {0},{1},'{2}',{3},'{4}',0", int.Parse(empSerial), model.CompanyID, setDate, ntime, model.userName), _sqlConnection);
+                                                if (flag)
+                                                {
+                                                    response.Add(new TextUploadMessage { IsSuccess = true, Message = "Employee No(" + emp_no + ") Upload Date(" + Convert.ToDateTime(setDate).ToString("dd/MMM/yyyy") + ") Successful !!" });
+                                                }
+                                                else
+                                                {
+                                                    response.Add(new TextUploadMessage { IsSuccess = false, Message = "Employee No(" + emp_no + ") Upload Date(" + Convert.ToDateTime(setDate).ToString("dd/MMM/yyyy") + ") New Data Not Found !!" });
+                                                }
+                                                int res = Math.Abs(((loopCount + 1) * 100) / filteredLines.Length);
+                                                if (res > 1 && res <= 99)
+                                                    await _hubContext.Clients.Group(string.Concat("bTxtUp_", model.CompanyID, "_", model.userName)).SendAsync("TxtUp_ReceiveProgress", res);
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        response.Add(new TextUploadMessage { IsSuccess = false, Message = "Close Anther Tab Use Your UserID !!" });
+                                        break;
+                                    }
+                                    loopCount++;
+                                }
+                            }
+                            else
+                            {
+                                response.Add(new TextUploadMessage { IsSuccess = false, Message = "Can Not Find Any Data In Text File !!" });
+                            }
+                        }
+                        else
+                        {
+                            response.Add(new TextUploadMessage { IsSuccess = false, Message = "Company Text File Not Setup !!" });
+                        }
+                    }
+                    else
+                    {
+                        response.Add(new TextUploadMessage { IsSuccess = false, Message = "You Can Not Upload Any File !!" });
+                    }
+                }
+                else
+                {
+                    response.Add(new TextUploadMessage { IsSuccess = false, Message = "File Format Not Valid !!" });
+                }
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+                response.Add(new TextUploadMessage { IsSuccess = false, Message = "Something Went Wrong !!" });
+            }
+            finally
+            {
+                await _dgCommon.saveChangesAsync(string.Format("delete from dg_pay_Process_startOrStop where procs_compid={0} and procs_date='{1}' and procs_type='att_text_upload'", model.CompanyID, DateTime.Now.ToString("MM/dd/yyyy")), _sqlConnection);
+                await _hubContext.Clients.Group(string.Concat("bTxtUp_", model.CompanyID, "_", model.userName)).SendAsync("TxtUp_ReceiveProgress", 100);
+            }
+            return response;
+        }
         public async Task<List<ReturnObject>> ReadAttnTextFileEmployeeWise(UploadFileEmpWise model)
         {
             //string path = $"{_webHostEnvironment.WebRootPath}\\TextFileUpload\\40_382023946.txt";

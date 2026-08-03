@@ -21,7 +21,7 @@ namespace Payroll_API.Controllers
         {
             try
             {
-                var result = await _globalMaster.uploadAttendances.ReadAttnTextFile_New3(model);
+                var result = await _globalMaster.uploadAttendances.ReadAttnTextFile_NewWithTrg(model);
                 if (result.Count > 0)
                 {
                     return Ok(result);

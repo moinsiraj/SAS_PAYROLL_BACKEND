@@ -584,7 +584,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>2.54451in</Height>
+                  <Height>2.48201in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -5322,7 +5322,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.30556in</Height>
+                                    <Height>0.25695in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -5354,7 +5354,6 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell>
@@ -8683,7 +8682,7 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.08906in</Top>
                               <Left>0.0125in</Left>
-                              <Height>2.41379in</Height>
+                              <Height>2.36518in</Height>
                               <Width>13.52745in</Width>
                               <Style>
                                 <Border>
@@ -8754,7 +8753,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.00694in</Top>
             <Left>0.01611in</Left>
-            <Height>2.54451in</Height>
+            <Height>2.48201in</Height>
             <Width>13.53996in</Width>
             <Style>
               <Border>
@@ -8763,7 +8762,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.55145in</Height>
+        <Height>2.48895in</Height>
         <Style />
       </Body>
       <Width>13.55607in</Width>
